@@ -8,6 +8,7 @@ body {
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+  color: #000000;
 }
 
 h1,
@@ -23,7 +24,7 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
-  font: inherit;
+  font: inherit; /* Наследование параметров текста родителя */
 }
 
 a {
