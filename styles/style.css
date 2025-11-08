@@ -59,6 +59,7 @@
 }
 
 .header__nav__contacts {
+  width: 240px;
   justify-self: end;
   font: inherit;
 }
