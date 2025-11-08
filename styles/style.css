@@ -2,6 +2,12 @@
 
 /* Благодарю за уточнение */
 
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 /* Header */
 
 .header {
@@ -9,28 +15,56 @@
   height: 293px;
   padding: 92px 50px 96px 50px;
   font-size: 18px;
+  font-style: normal;
 }
 
 .header__nav {
   display: grid;
-  grid-column: 3;
   grid-template-columns: 1fr 148px 1fr;
+  grid-column: 3;
+  align-items: center;
 }
 
 .header__menu {
-
+  display: flex;
+  gap: 32px;
+  list-style: none;
 }
 
-.header__menu__item {
-  
+.header__menu__item:not(.inactive) {
+  list-style: circle;
+}
+
+.header__menu__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__menu__item:not(.inactive) .header__menu__link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.inactive .header__menu__link {
+  pointer-events: none;
 }
 
 .header__nav__logo {
+  width: min-content;
+}
 
+.header__nav__logo img {
+  width: 148px;
 }
 
 .header__nav__contacts {
   justify-self: end;
+  font: inherit;
+}
+
+.header__nav__contacts p {
+  margin: 0;
 }
 
 /* Cover Section */
