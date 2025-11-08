@@ -13,9 +13,10 @@
 .header {
   width: 100%;
   height: 293px;
-  padding: 92px 50px 96px 50px;
+  padding: 92px 50px 96px;
   font-size: 18px;
   font-style: normal;
+  line-height: 1.2;
 }
 
 .header__nav {
@@ -27,7 +28,7 @@
 
 .header__menu {
   display: flex;
-  gap: 32px;
+  gap: 30px;
   list-style: none;
 }
 
@@ -59,8 +60,8 @@
 }
 
 .header__nav__contacts {
-  width: 240px;
   justify-self: end;
+  width: 240px;
   font: inherit;
 }
 
@@ -71,21 +72,60 @@
 /* Cover Section */
 
 .cover {
+  position: relative;
   width: 100%;
   height: 757px;
+  padding: 165px 50px 50px;
+  color: #FFFFFF;
+  font-family: inherit;
+  text-transform: uppercase;
   background-image: url(../images/cover.jpg);
 }
 
 .cover__title {
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  letter-spacing: 30%;
+}
 
+.aligned__text {
+  display: block;
+}
+
+.aligned__text__center {
+  text-align: center;
+}
+
+.aligned__text__right {
+  text-align: right;
 }
 
 .cover__description {
-
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 90%; 
+  gap: 107px;
 }
+/* 
+.cover__description_text {
 
-.cover__description__button {
+} */
 
+.cover__description__button{
+  border: 1px solid #fff;
+  padding: 0;
+  color: #FFFFFF;
+  font: inherit;
+  background: none;
+  right: 0;
 }
 
 /* Lots Section */
