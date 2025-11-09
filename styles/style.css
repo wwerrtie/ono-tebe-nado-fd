@@ -17,6 +17,7 @@
   font-size: 18px;
   font-style: normal;
   line-height: 1.2;
+
 }
 
 .header__nav {
@@ -37,7 +38,6 @@
 }
 
 .header__menu__link {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -83,6 +83,9 @@
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
@@ -91,28 +94,29 @@
 
 .aligned__text {
   display: block;
+  margin: 0 0 18px 0;
 }
 
 .aligned__text__center {
-  text-align: center;
+  align-self: center;
 }
 
 .aligned__text__right {
-  text-align: right;
+  align-self: flex-end;
 }
 
 .cover__description {
   position: absolute;
   bottom: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end; 
+  gap: 107px;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 90%; 
-  gap: 107px;
+  letter-spacing: 90%;
 }
 /* 
 .cover__description_text {
@@ -120,30 +124,44 @@
 } */
 
 .cover__description__button{
+  right: 0;
   border: 1px solid #fff;
   padding: 0;
   color: #FFFFFF;
   font: inherit;
   background: none;
-  right: 0;
 }
 
 /* Lots Section */
 
 .lots {
-
+  width: 1052px;
+  height: 723px;
+  margin: 180px auto 0;
 }
 
 .lots__title {
-
+  margin: 0 0 27px 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.lots__cards {
 
+.lots__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  grid-column: 3;
+  gap: 25px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .cards__item {
-
+  width: 334px;
+  height: 596px;
+  background: yellow;
 }
 
 .cards__item__link {
@@ -151,13 +169,19 @@
 }
 
 .lots__link {
-
+  position: relative;
+  text-transform: lowercase;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0 0 40px;
 }
 
 /* About Section */
 
 .about {
-
+  width: 100%;
+  height: 595px;
+  margin-top: 120px;
 }
 
 .about__logo__column {
@@ -171,13 +195,35 @@
 /* Footer */
 
 .footer {
-  
+  display: grid;
+  grid-column: 3;
+  width: 100%;
+  height: 180px;
+  margin-top: 180px;
 }
 
 .footer__menu {
-
+  display: flex;
 }
 
 .footer__social__links {
+  width: 240px;
+  height: 48px;
+}
 
+.social__links__item {
+  display: flex;
+  align-content: center;
+}
+
+.social__decoration {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #000;
+  border-radius: 50%; /* Задаем круглую форму */
+  overflow: hidden;
+  /* background-color: #fff; */
 }
