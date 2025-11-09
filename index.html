@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
     <!-- Подключение стилей -->
-    <link rel="stylesheet" href="styles/global.css"> <!-- Обнуление стилей-->
-    <link rel="stylesheet" href="styles/style.css"> <!-- Стили элементов макета-->
-    <link rel="stylesheet" href="fonts/fonts.css"> <!-- Подключение шрифтов-->
+    <link rel="stylesheet" href="./styles/global.css"> <!-- Обнуление стилей-->
+    <link rel="stylesheet" href="./styles/style.css"> <!-- Стили элементов макета-->
+    <link rel="stylesheet" href="./fonts/fonts.css"> <!-- Подключение шрифтов-->
   </head>
   <body>
     <!-- Header Section Start-->
@@ -26,7 +26,7 @@
           </li>
         </ul>
         <a href="#" class="header__nav__logo">
-          <img src="images/logo-black.svg" alt="">
+          <img src="./images/logo-black.svg" alt="">
         </a>
         <address class="header__nav__contacts">
           <p class="underline">
@@ -60,13 +60,17 @@
         </div>
       </section>
       <!-- Cover Section End -->
-      <section class="lots">
+      <section id="lots" class="lots">
         <h2 class="lots__title">
           Лоты
         </h2>
         <ul class="lots__cards">
           <li class="cards__item">
-            <a href="" class="cards__item__link">
+              <div class="cards__background">
+                <img src="./images/card-lot-01.jpg" alt="">
+                <div class="cards__overlay"></div>
+              </div>
+            <a href="" class="cards__item__link underline">
               Фильм режиссёра, который бросил киношколу
             </a>
             <article>
@@ -74,7 +78,11 @@
             </article>
           </li>
           <li class="cards__item">
-            <a href="" class="cards__item__link">
+              <div class="cards__background">
+                <img src="./images/card-lot-02.jpg" alt="">
+                <div class="cards__overlay"></div>
+              </div>
+            <a href="" class="cards__item__link underline">
               Книга, где описан один скучный день из жизни рекламного агента
             </a>
             <article>
@@ -82,7 +90,11 @@
             </article>
           </li>
           <li class="cards__item">
-            <a href="" class="cards__item__link">
+              <div class="cards__background">
+                <img src="./images/card-lot-03.jpg" alt="">
+                <div class="cards__overlay"></div>
+              </div>
+            <a href="" class="cards__item__link underline">
               Картина, которую повторит даже 5-летний сын маминой подруги
             </a>
             <article>
@@ -96,7 +108,7 @@
       </section>
       <section class="about">
         <div class="about__logo__column">
-          <img src="images/logo-white.svg" alt="">
+          <img src="./images/logo-white.svg" alt="">
         </div>
         <div class="about__info__column">
           <h2 class="info__title">
@@ -142,17 +154,17 @@
       <div class="footer__social__links">
         <div class="social__decoration">
           <a href="#" class="social__links__item">
-            <img src="images/yt.svg" alt="">
+            <img src="./images/yt.svg" alt="">
           </a>
         </div>
         <div class="social__decoration">
           <a href="#" class="social__links__item">
-            <img src="images/vk.svg" alt="">
+            <img src="./images/vk.svg" alt="">
           </a>
         </div>
         <div class="social__decoration">
           <a href="#" class="social__links__item">
-            <img src="images/pinterest.svg" alt="">
+            <img src="./images/pinterest.svg" alt="">
           </a>
         </div>
       </div>
