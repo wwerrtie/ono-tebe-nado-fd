@@ -1,9 +1,9 @@
 body {
   position: relative;
   width: 1100px;
+  margin: 0 auto;
   padding: 0;
-  font-family: Raleway, sans-serif;
-  margin: 0 auto; }
+  font-family: Raleway, sans-serif; }
 
 h1,
 h2,
@@ -36,10 +36,9 @@ img {
 }
 
 button {
-  font: inherit;
   border: none;
+  font: inherit;
   background-color: transparent;
-
 }
 
 address {
@@ -68,8 +67,8 @@ address {
 
 .content-section {
   box-sizing: border-box;
-  margin: 0 auto;
   width: 1052px;
+  margin: 0 auto;
 }
 
 .overlay {
@@ -82,7 +81,7 @@ address {
 }
 
 .underline {
-  text-decoration: underline; 
-  /* text-underline-offset: 3px;   */
-  text-decoration-thickness: 1px; /*  Толщина линии */
+  text-decoration: underline;  
+  text-decoration-thickness: 1px; /*  Толщина линии */ 
+  text-underline-offset: 3px;
 }
