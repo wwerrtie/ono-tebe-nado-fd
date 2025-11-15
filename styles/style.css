@@ -87,7 +87,7 @@
   text-align: center;
 }
 
-.aligned-text_right  {
+.aligned-text_right {
   text-align: right;
   transform:translateX(30px);
 }
@@ -217,7 +217,7 @@
   font-family: inherit;
   font-weight: 400;
   font-size: 20px;
-  text-decoration: underline; 
+  /* text-decoration: underline;  */
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
   text-transform: lowercase;
@@ -305,8 +305,8 @@
 } 
 
 .footer__menu-link {
-  text-decoration: underline; 
-  text-decoration-thickness: 1px; 
+  /* text-decoration: underline;  */
+  /* text-decoration-thickness: 1px;  */
   text-underline-offset: 4px;
 }
 
