@@ -298,16 +298,16 @@
 }
 
 .footer__menu-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   text-align: center;
+  list-style: none;
 } 
 
 .footer__menu-link {
   text-decoration: underline; 
-  text-underline-offset: 4px; 
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
